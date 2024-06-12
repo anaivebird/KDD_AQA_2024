@@ -30,6 +30,7 @@ sh first_try/gte_embedding_train.sh
 sh clean_text_test/clean_text_inference_probs.sh
 ```
 得到AQA-test-public/result_test.jsonl，请手动重命名为result_gte.jsonl
+
 删除embedding_output2文件夹，或者移动到别的文件夹下
 
 2. 微调Snowflake/snowflake-arctic-embed-l并推理得到每个问题top 200候选文章的推理分数
@@ -41,6 +42,7 @@ sh first_try/snowflake_embedding_train.sh
 sh clean_text_test/clean_text_inference_probs.sh
 ```
 得到AQA-test-public/result_test.jsonl，请手动重命名为result_snowflake.jsonl
+
 删除embedding_output2文件夹，或者移动到别的文件夹下
 
 
