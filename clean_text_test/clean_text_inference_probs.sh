@@ -1,0 +1,3 @@
+python clean_text_test/save_query_embedding.py
+python clean_text_test/save_candidate_embedding_multigpu.py
+python clean_text_test/query_inference_probs.py

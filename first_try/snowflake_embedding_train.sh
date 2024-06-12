@@ -1,0 +1,18 @@
+torchrun --nproc_per_node 8 \
+    -m FlagEmbedding.baai_general_embedding.finetune.run \
+    --output_dir embedding_output2 \
+    --model_name_or_path Snowflake/snowflake-arctic-embed-l \
+    --train_data AQA/embedding_train_new.jsonl \
+    --learning_rate 1e-5 \
+    --fp16 \
+    --num_train_epochs 10 \
+    --per_device_train_batch_size 2 \
+    --dataloader_drop_last True \
+    --normlized True \
+    --temperature 0.02 \
+    --query_max_len 512 \
+    --passage_max_len 512 \
+    --train_group_size 10 \
+    --negatives_cross_device \
+    --logging_steps 10 \
+    --query_instruction_for_retrieval ""
