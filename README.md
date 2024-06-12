@@ -25,7 +25,10 @@ python clean_text/make_embedding_data.py
 ```buildoutcfg
 sh first_try/gte_embedding_train.sh
 ```
-训练完后运行
+训练完后运行，也可以不用训练直接下载checkpoint，解压后文件夹名字改为embedding_output2放在根目录下进行推理
+
+https://drive.google.com/file/d/1iw2V2hsJPzmU_W5M0M5NVvII6eGMIes9/view?usp=sharing
+
 ```buildoutcfg
 sh clean_text_test/clean_text_inference_probs.sh
 ```
@@ -37,7 +40,9 @@ sh clean_text_test/clean_text_inference_probs.sh
 ```buildoutcfg
 sh first_try/snowflake_embedding_train.sh
 ```
-训练完后运行
+训练完后运行，也可以不用训练直接下载checkpoint，解压后文件夹名字改为embedding_output2放在根目录下进行推理
+
+https://drive.google.com/file/d/1Hg5d0AkHxg4bAM3UAZIC8TuUoUHpeZ6Q/view?usp=sharing
 ```buildoutcfg
 sh clean_text_test/clean_text_inference_probs.sh
 ```
